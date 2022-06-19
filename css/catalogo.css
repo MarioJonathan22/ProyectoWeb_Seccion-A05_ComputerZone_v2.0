@@ -1,0 +1,188 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body
+{
+    background: rgb(235, 235, 235);
+    font-family: "comfortaa";
+}
+
+nav
+{
+    background: rgb(97, 97, 97); /* fondo de color del menu*/
+    height: 100px; /* por el tamaño de la imagen*/
+    width: 100%;
+    top: 0%;
+
+}
+
+nav .enlace
+{
+    position: absolute; /* es como ponerse encima pero en su unico lugar*/
+    margin-left: 100px;
+}
+
+nav .enlace .logo /*dimension del logo*/
+{
+
+    width: 100%;
+}
+
+nav ul
+{
+    float: right;
+    margin-right: 100px;
+}
+
+nav ul li
+{
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 100px; /* desde arriba de la linea donde estan los link hacia abajo (cae justo al medio del  nav) */
+}
+
+nav ul li a
+{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+nav ul li a:hover
+{
+    background: red;
+}
+
+/*================= MAIN - PRODUCTOS =================*/
+/*====================== PROCESADORE INTEL ===================*/
+main
+{
+    margin: 50px 0;
+}
+
+main section.placas
+{
+    display: flex; /* bloques en fila*/
+    flex-wrap: wrap; /*se acomodan y no se separan*/
+    justify-content: center; /*espacio alrededor de los bloques*/
+}
+
+main section.placas .intel, main section.placas .ryzen /*cada foto intel y ryzen*/
+{
+    padding: 0 30px;
+}
+
+main section.placas img
+{
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.5);
+}
+
+main section.placas img:hover
+{
+    transform: scale(1.1);
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+main section.placas .titulo
+{
+    font-size: 30px;
+    position: relative;
+    margin-left: 40px;
+    margin-top: -100px;
+    color: rgb(251, 255, 0);
+    font-weight: 900;
+}
+
+main section.placas .ver li a
+{
+    position: absolute; /*para que margin-top surga efecto*/
+    background: rgb(33, 206, 33);
+    width: 140px;
+    margin-left: 40px;
+    margin-top: 5px; /*sube o baja el cuadro verde "ver producto"*/
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 800;
+}
+
+main section.placas .ver li a:hover
+{
+    background: rgb(107, 107, 107);
+}
+
+
+/*====================== PROCESADORE RYZEN ===================*/
+main section.procesadores
+{
+    display: flex; /* bloques en fila*/
+    flex-wrap: wrap; /*se acomodan y no se separan*/
+    justify-content: center; /*espacio alrededor de los bloques*/
+    margin-top: 120px;
+}
+
+main section.procesadores .intel, main section.procesadores .ryzen /*cada foto intel y ryzen*/
+{
+    padding: 0 30px;
+}
+
+main section.procesadores img
+{
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.5);
+}
+
+main section.procesadores img:hover
+{
+    transform: scale(1.1);
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+main section.procesadores .titulo
+{
+    font-size: 30px;
+    position: relative;
+    margin-left: 40px;
+    margin-top: -100px;
+    color: rgb(251, 255, 0);
+    font-weight: 900;
+}
+
+main section.procesadores .ver li a
+{
+    position: absolute; /*para que margin-top surga efecto*/
+    background: rgb(33, 206, 33);
+    width: 140px;
+    margin-left: 40px;
+    margin-top: 5px; /*sube o baja el cuadro verde "ver producto"*/
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 800;
+}
+
+main section.procesadores .ver li a:hover
+{
+    background: rgb(248, 132, 0);
+}
+
+footer
+{
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    background: rgb(107, 107, 107);
+    font-size: 15px;
+    width: 100%;
+
+}
